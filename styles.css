@@ -28,7 +28,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: auto;
     background-color: black;
     color: white;
 }
@@ -43,13 +43,12 @@ html {
     width: 100%;
     height: auto;
     object-fit: none;
-    /* z-index: -2; */
 }
 
 #clouds-effect {
     position: absolute;
     width: 100%;
-    top: 65%; /*430*/
+    top: 65%;
     left: 0;
 }
 
@@ -98,7 +97,6 @@ html {
     color: var(--color-secundary);
     border-style: double;
     border-color: var(--color-secundary);
-    /* margin: 0.8em; */
 }
 
 .main-section_button:hover{
@@ -425,8 +423,6 @@ html {
 
 #clouds-effect-footer {
     width: 100%;
-    /* position: relative; */
-    /* bottom: 250px; */
     margin-bottom: -115px;
     background-color: var(--color-secundary);
 }
@@ -457,14 +453,6 @@ html {
     grid-template-columns: 50px 50px 50px 50px;
     gap: 10px;
 }
-
-/* .social-media {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: var(--color-secundary);
-    color: var(--color-primary);
-} */
 
 .social-media {
     display: flex;
@@ -515,44 +503,100 @@ html {
 
 
 
+@media (max-width: 395px) {
+
+    .notice {
+        font-size: 0.5em;
+    }
+    .space-div {
+        height: 120px;
+    }
 
 
-
-@media (max-width: 375px) {
     .main-section {
         height: 360px;
     }
+
     #main-section_logo {
         width: 20%;
         top: 100px;
     }
+
     .main-section_text-container {
         top: 170px;
     }
+
     .main-section_text-container h2 {
         font-size: 0.9em;
     }
+
     .main-section_text-container h4 {
         width: 250px;
         font-weight: 400;
         font-size: 0.7em;
     }
+
     .main-section_buttons-container {
         top: 280px;
     }
+
     .main-section_button {
         width: 100px;
         height: 25px;
         font-size: 0.7em;
         font-weight: normal;
     }
+
     #clouds-effect {
-        top: 90%;
+        top: 89%;
     }
 
-    .second-section {
-        display: none;
+    /*second-section*/
+
+    #second-section_title {
+        margin: 7% 7% 12% 7%;
+        font-size: 1.28em;
     }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .svg-card {
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin-top: -30px;
+        bottom: auto;  
+    }
+    
+    .svg-card svg {
+        margin-top: 0;
+    }
+    
+    .card {
+        width: 240px;
+        height: 175px;
+        margin-bottom: 55px;
+        padding: 4.5% 6%;
+    }
+
+    .card-title {
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .card-description {
+        font-size: 0.77em;
+    }
+    
+    #second-section_text {
+        margin: 7% 7% 0 7%;
+        font-size: 1.10em;
+    }
+
+
+
     .third-section {
         display: none;
     }
